@@ -1,0 +1,48 @@
+.sidenav {
+  height: 100%;
+  width: 140px;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: orange;
+  overflow-x: hidden;
+  padding-top: 10px;
+  border: 10px black;
+}
+
+.sidenav a {
+  padding: 6px 8px 40px 16px;
+  text-decoration: none;
+  font-size: 16px;
+  color: white;
+  display: block;
+  font-family: "Times New Roman", Times, serif;
+  font-weight: bold;
+}
+
+.sidenav a:hover {
+  color: black;
+  background-color: white;
+  font-weight: bold;
+}
+
+.sidenav p{
+  padding: 50px 10px;
+  color: white;
+}
+
+.main {
+  margin-left: 160px; /* Same as the width of the sidenav */
+  font-size: 28px; /* Increased text to enable scrolling */
+  padding: 10px 10px;
+}
+
+.main p{
+  padding: 10px 0px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
